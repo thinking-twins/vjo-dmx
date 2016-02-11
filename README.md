@@ -1,14 +1,14 @@
 # Visual Jockey Gold DMX Plugins #
 
-This is a collection of custom effect to stream your output screen to external DMX devices (e.g. LED Pixel Walls, LED Strings, DMX Fixtures). There are four plugins so far:
+This is a collection of custom effect to stream your output screen to external DMX devices (e.g. LED Pixel Walls, LED Strings, DMX Fixtures). 
 
 
+### Available plugins ###
 
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* DMX Output (FTDI Devices)
+* Color Grading (simple gamma correction pass to enhance the color accuracy on ws2801 rgb led pixel modules)
+* Mosaic Effect (to simulate/preview the rasterized output)
+* Time Blur (smoothly fade out colors over time)
 
 ### How do I get set up? ###
 
