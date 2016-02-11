@@ -7,16 +7,16 @@ This is a collection of [VJo](http://www.visualjockey.com/) custom effects to ea
 
 ### Available plugins ###
 
-* DMX Output (FTDI Devices)
-* Color Grading (simple gamma correction pass to enhance the color accuracy on ws2801 rgb led pixel modules)
-* Mosaic Effect (to simulate/preview the rasterized output)
-* Time Blur (smoothly fade out colors over time)
+* **DMX Output** (FTDI Devices)
+* **Color Grading** (simple gamma correction pass to enhance the color accuracy on ws2801 rgb led pixel modules)
+* **Mosaic Effect** (to simulate/preview the rasterized output)
+* **Time Blur** (smoothly fade out colors over time)
 
 ### Installation ###
 
-* Download the plugin files here:
+* Download the **plugin files** here:
 * Extract the archive into the Visual Jockey **root** folder (usually C:\Program Files (x86)\VisualJockey Gold SP1\)
-* Connect your DMX Controller
+* Connect your DMX Converter (DMX to WS2811 converter)
 * Open Visual Jockey Gold SP1
 * In the Composition gallery, there's a new Folder called "DMX Examples"
 * Load **DMX_test01.fxc**
@@ -24,7 +24,7 @@ This is a collection of [VJo](http://www.visualjockey.com/) custom effects to ea
 
 ### Troubleshooting ###
 
-This plugin creates stunning results when using ws2801 rgb pixels. See the following example video
+This plugin creates stunning results when using ws2801 rgb pixels. See the following [example video](https://youtu.be/1VQNskTLkXc).
 
 ### DMX Output configuration ###
 
