@@ -35,4 +35,5 @@ This plugin creates stunning results when using ws2801 rgb pixels. See the follo
 * Define the correct matrix size (pixelX*pixelY)
 * Run the test mode (Auto, Step, Snake, Increase Value, Flip, Linear Brightness, Matrix Brightness )
 
+
 ![06b_dmx_plugin.png](https://bitbucket.org/repo/x6G97j/images/1242016383-06b_dmx_plugin.png)
