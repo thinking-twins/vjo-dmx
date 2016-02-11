@@ -2,7 +2,6 @@
 
 This is a collection of [VJo](http://www.visualjockey.com/) custom effects to easily stream your output screen to external DMX devices (e.g. LED Pixel Walls, LED Strings, DMX Fixtures). 
 
-___
 ![03_prototyp_dmxplugin.JPG](https://bitbucket.org/repo/x6G97j/images/1282263225-03_prototyp_dmxplugin.JPG)
 
 
