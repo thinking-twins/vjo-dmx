@@ -2,11 +2,11 @@
 
 This is a collection of [VJo](http://www.visualjockey.com/) custom effects to easily stream your output screen to external DMX devices (e.g. LED Pixel Walls, LED Strings, DMX Fixtures). 
 
-
+___
 ![03_prototyp_dmxplugin.JPG](https://bitbucket.org/repo/x6G97j/images/1282263225-03_prototyp_dmxplugin.JPG)
 
 
-### Available plugins ###
+## Available plugins ##
 
 * **DMX Output** (FTDI Devices)
 * **Color Grading** (simple gamma correction pass to enhance the color accuracy on ws2801 rgb led pixel modules)
@@ -15,7 +15,9 @@ This is a collection of [VJo](http://www.visualjockey.com/) custom effects to ea
 
 ![vjo_plugins.png](https://bitbucket.org/repo/x6G97j/images/4099938706-vjo_plugins.png)
 
-### Installation ###
+___
+
+## Installation ##
 
 * Download the **plugin files** here:
 * Extract the archive into the Visual Jockey **root** folder (usually C:\Program Files (x86)\VisualJockey Gold SP1\)
@@ -25,11 +27,14 @@ This is a collection of [VJo](http://www.visualjockey.com/) custom effects to ea
 * Load **DMX_test01.fxc**
 * Run the composition!
 
-### Example Videos ###
+___
+
+## Example Videos ##
 
 This plugin creates stunning results when using ws2801 rgb pixels. See the following [example video](https://youtu.be/1VQNskTLkXc).
+___
 
-### DMX Output configuration / settings ###
+## DMX Output configuration / settings ##
 
 * Open the DMX Output Effect settings in your composition 
 * Choose your DMX linear adress mode: Snake Bottom Left | Snake Top Right | Snake Top Left | 4Dot-Modules
