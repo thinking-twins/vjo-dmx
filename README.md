@@ -12,6 +12,8 @@ This is a collection of [VJo](http://www.visualjockey.com/) custom effects to ea
 * **Mosaic Effect** (to simulate/preview the rasterized output)
 * **Time Blur** (smoothly fade out colors over time)
 
+![vjo_plugins.png](https://bitbucket.org/repo/x6G97j/images/4099938706-vjo_plugins.png)
+
 ### Installation ###
 
 * Download the **plugin files** here:
