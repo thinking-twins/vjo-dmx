@@ -29,7 +29,7 @@ This plugin creates stunning results when using ws2801 rgb pixels. See the follo
 ### DMX Output configuration ###
 
 * Choose your DMX linear adress mode: Snake bottom left 
-* Run the test mode
 * Define the correct matrix size (pixelX*pixelY)
+* Run the test mode
 
 ![06b_dmx_plugin.png](https://bitbucket.org/repo/x6G97j/images/1242016383-06b_dmx_plugin.png)
