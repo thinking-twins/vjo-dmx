@@ -1,6 +1,6 @@
 # Visual Jockey Gold DMX Plugins #
 
-This is a collection of Vjo custom effects to easily stream your output screen to external DMX devices (e.g. LED Pixel Walls, LED Strings, DMX Fixtures). 
+This is a collection of [Vjo](http://www.visualjockey.com/) custom effects to easily stream your output screen to external DMX devices (e.g. LED Pixel Walls, LED Strings, DMX Fixtures). 
 
 ![03_prototyp_dmxplugin.JPG](https://bitbucket.org/repo/x6G97j/images/1282263225-03_prototyp_dmxplugin.JPG)
 
