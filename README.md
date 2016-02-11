@@ -28,8 +28,8 @@ This plugin creates stunning results when using ws2801 rgb pixels. See the follo
 
 ### DMX Output configuration ###
 
-* Choose your DMX linear adress mode: Snake bottom left 
+* Choose your DMX linear adress mode: Snake Bottom Left | Snake Top Right | Snake Top Left | 4Dot-Modules
 * Define the correct matrix size (pixelX*pixelY)
-* Run the test mode
+* Run the test mode (Auto, Step, Snake, Increase Value, Flip, Linear Brightness, Matrix Brightness )
 
 ![06b_dmx_plugin.png](https://bitbucket.org/repo/x6G97j/images/1242016383-06b_dmx_plugin.png)
