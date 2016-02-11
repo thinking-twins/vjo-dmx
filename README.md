@@ -24,7 +24,7 @@ This is a collection of [VJo](http://www.visualjockey.com/) custom effects to ea
 * Load **DMX_test01.fxc**
 * Run the composition!
 
-### Troubleshooting ###
+### Example Videos ###
 
 This plugin creates stunning results when using ws2801 rgb pixels. See the following [example video](https://youtu.be/1VQNskTLkXc).
 
