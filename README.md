@@ -28,8 +28,9 @@ This is a collection of [VJo](http://www.visualjockey.com/) custom effects to ea
 
 This plugin creates stunning results when using ws2801 rgb pixels. See the following [example video](https://youtu.be/1VQNskTLkXc).
 
-### DMX Output configuration ###
+### DMX Output configuration / settings ###
 
+* Open the DMX Output Effect settings in your composition 
 * Choose your DMX linear adress mode: Snake Bottom Left | Snake Top Right | Snake Top Left | 4Dot-Modules
 * Define the correct matrix size (pixelX*pixelY)
 * Run the test mode (Auto, Step, Snake, Increase Value, Flip, Linear Brightness, Matrix Brightness )
