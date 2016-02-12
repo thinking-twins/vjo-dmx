@@ -1,0 +1,277 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DMXDIALOG DIALOGEX 0, 0, 358, 224
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "DMX Control Panel 2"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "Linear Address Mode",IDC_STATIC,15,179,68,8
+    COMBOBOX        IDC_COMBO_ADDRESSMODE,95,176,148,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DMXTEST,257,176,86,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Matrix Size (Col/Row)",IDC_STATIC,2,198,82,8
+    EDITTEXT        IDC_MATRIXSIZE_COLUMNS,96,196,18,15,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MATRIXSIZE_ROWS,127,196,17,15,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_DIALOG_DMXFIXTURE DIALOGEX 0, 0, 147, 167
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,77,138,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,17,138,50,14
+    LTEXT           "DMX-Channel",IDC_STATIC,17,21,44,8
+    EDITTEXT        IDC_FIXTURE_DMXCHANNEL,67,18,33,14,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_RIGHT
+    GROUPBOX        "Position",IDC_STATIC,14,36,87,32
+    LTEXT           "X:",IDC_STATIC,20,49,8,8
+    EDITTEXT        IDC_FIXTURE_XOFFSET,31,46,18,14,ES_AUTOHSCROLL
+    LTEXT           "Y:",IDC_STATIC,62,49,8,8
+    EDITTEXT        IDC_FIXTURE_YOFFSET,75,46,18,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SAMPLE_MODE,64,74,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sample Mode",IDC_STATIC,17,76,43,8
+    CONTROL         " Show reference",IDC_SHOW_REFERENCE,"Button",BS_AUTOCHECKBOX | BS_ICON | WS_TABSTOP,17,99,69,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DMXDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 351
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_DIALOG_DMXFIXTURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_COLORCORRECTION     BITMAP                  "res\\colorcorrection.bmp"
+IDB_DMX_LOGO            BITMAP                  "res\\dmx output.bmp"
+IDB_DOWNSAMPLE_LOGO     BITMAP                  "res\\downsample.bmp"
+IDB_TIMEBLUR_LOGO       BITMAP                  "res\\timeecho.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DMXDIALOG DLGINIT
+BEGIN
+    IDC_COMBO_ADDRESSMODE, 0x403, 18, 0
+0x6e53, 0x6b61, 0x2065, 0x6f42, 0x7474, 0x6d6f, 0x4c20, 0x6665, 0x0074, 
+
+    IDC_COMBO_ADDRESSMODE, 0x403, 16, 0
+0x6e53, 0x6b61, 0x2065, 0x6f54, 0x2070, 0x6952, 0x6867, 0x0074, 
+    IDC_COMBO_ADDRESSMODE, 0x403, 15, 0
+0x6e53, 0x6b61, 0x2065, 0x6f54, 0x2070, 0x654c, 0x7466, "\000" 
+    IDC_COMBO_ADDRESSMODE, 0x403, 13, 0
+0x4434, 0x746f, 0x4d2d, 0x646f, 0x6c75, 0x7365, "\000" 
+    IDC_COMBO_DMXTEST, 0x403, 17, 0
+0x4d44, 0x2058, 0x6554, 0x7473, 0x4d20, 0x646f, 0x2e65, 0x2e2e, "\000" 
+    IDC_COMBO_DMXTEST, 0x403, 10, 0
+0x7541, 0x6f74, 0x616d, 0x6974, 0x0063, 
+    IDC_COMBO_DMXTEST, 0x403, 5, 0
+0x7453, 0x7065, "\000" 
+    IDC_COMBO_DMXTEST, 0x403, 6, 0
+0x6e53, 0x6b61, 0x0065, 
+    IDC_COMBO_DMXTEST, 0x403, 16, 0
+0x6e49, 0x7263, 0x6165, 0x6573, 0x7620, 0x6c61, 0x6575, 0x0073, 
+    IDC_COMBO_DMXTEST, 0x403, 5, 0
+0x6c46, 0x7069, "\000" 
+    IDC_COMBO_DMXTEST, 0x403, 18, 0
+0x694c, 0x656e, 0x7261, 0x4220, 0x6972, 0x6867, 0x6e74, 0x7365, 0x0073, 
+
+    IDC_COMBO_DMXTEST, 0x403, 18, 0
+0x614d, 0x7274, 0x7869, 0x4220, 0x6972, 0x6867, 0x6e74, 0x7365, 0x0073, 
+
+    0
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_INPUTSIZE DIALOGEX 0, 0, 117, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Input Size"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,75,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,60,75,50,14
+    LTEXT           "Width",IDC_STATIC,11,21,20,8
+    LTEXT           "Height",IDC_STATIC,11,37,22,8
+    GROUPBOX        "Output resolution",IDC_STATIC,5,5,105,65
+    EDITTEXT        IDC_EDIT_X0,35,20,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y0,35,35,40,14,ES_AUTOHSCROLL
+    CONTROL         "Show border",IDC_CHECK_EQUAL0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,55,56,10
+END
+
+IDD_DIALOG_COLORCORRECTION DIALOGEX 0, 0, 147, 78
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Color Correction Settings"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,19,45,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,74,45,50,14
+    GROUPBOX        "Settings",-1,7,5,133,66
+    CONTROL         "Gradation",IDC_CHECK_GRADATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,20,47,10
+    CONTROL         "Color Correction",IDC_CHECK_CORRECTION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,67,21,68,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_INPUTSIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG_COLORCORRECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

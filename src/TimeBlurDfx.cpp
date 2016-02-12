@@ -13,7 +13,7 @@
 #include "pkgSamples.h"
 #include "dfxAPI.h"
 #include "common/WrapDynamicVars.h"
-#include "common.h"
+#include "utils/rgb.h"
 
 class CTimeBlurDfx: public CDFX
 {
@@ -138,7 +138,7 @@ BOOL CTimeBlurDfx::UpdateConfig()
 	if(!GetConfigData(pConfigData))	
 		SetConfigData(pConfigData);
 
-	RegisterFloat(m_pEngine, &m_fFactor, _T("Factor"), 0.0f, 1.0f, 500.0f, 10000.0f, 1000.0f);
+	RegisterFloat(m_pEngine, &m_fFactor, "Factor", 0.0f, 1.0f, 500.0f, 10000.0f, 1000.0f);
 
 	return TRUE;
 }

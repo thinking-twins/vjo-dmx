@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ generated include file.
-// Used by pkgSamples.rc
+// Used by resource.rc
 //
 #define IDD_DIALOG_INPUTSIZE            130
 #define IDC_EDIT_X0                     1000

@@ -13,7 +13,7 @@
 #include "pkgSamples.h"
 #include "ColorCorrectionDfxDlg.h"
 #include "dfxAPI.h"
-#include "common.h"
+#include "utils/rgb.h"
 
 class CColorCorrectionDfx: public CDFX
 {
@@ -38,8 +38,8 @@ protected:
 	int     m_nXRes;
 	int     m_nYRes;
 
-	bool    m_correction;
-	bool		m_gradation;
+	BOOL    m_correction;
+	BOOL		m_gradation;
 
 	DWORD		m_nMemUsage;
 
@@ -50,17 +50,7 @@ private:
 };
 
 BEGIN_INPUTSCREENS_DESC(CColorCorrectionDfx)
-//{{256,256}, "RGB Bitmap" } you can also declare stratic inputscreenssizes, i.e. [256x256] like this!
 {{-1,-1}, "RGB Bitmap" }	// this usually means, that the size of the input will be equal with the size of the output.
-							// we need this too, if we want to make the inputsize dynamic
-							// for more input screens, just add more E.G.
-/*
-{{-1,-1}, "RGB 0"},
-{{-1,-1}, "RGB 1"},
-{{-1,-1}, "RGB 2"}
-*/
-
-
 END_INPUTSCREENS_DESC(CColorCorrectionDfx)
 
 BEGIN_OUTPUTSCREENS_DESC(CColorCorrectionDfx)
@@ -95,16 +85,16 @@ HBITMAP	CColorCorrectionDfx::GetLabelBitmap()
 void	CColorCorrectionDfx::SetConfigData(CConfigData *p)
 {
 	p->SetInt("!", 1);
-	p->SetInt("C", m_correction);
-	p->SetInt("G", m_gradation);
+	p->SetInt("C", m_correction ? 1 : 0);
+	p->SetInt("G", m_gradation ? 1 : 0);
 }
 
 BOOL CColorCorrectionDfx::GetConfigData(CConfigData *p)
 {
 	if(!p->GetInt("!", 0)) return FALSE;
 
-	m_correction = (bool) p->GetInt("C", m_correction);
-	m_gradation = (bool) p->GetInt("G", m_gradation);
+	m_correction = p->GetInt("C", m_correction) != 0;
+	m_gradation = p->GetInt("G", m_gradation) != 0;
 
 	return TRUE;
 }
@@ -161,7 +151,7 @@ DWORD CColorCorrectionDfx::GetPixel(LPDWORD ptr, int x, int y)
 	return ptr[y * m_nXRes + x];
 }
 
-DWORD applyCorrection(DWORD color, bool colorCorrection, bool gradation)
+DWORD applyCorrection(DWORD color, BOOL colorCorrection, BOOL gradation)
 {
 	BYTE r = GetR(color);
 	BYTE g = GetG(color);
@@ -170,9 +160,9 @@ DWORD applyCorrection(DWORD color, bool colorCorrection, bool gradation)
 	//apply gradation
 	if(gradation)
 	{
-		r = (BYTE) 255 * pow(r / 255.0f, 3);
-		g = (BYTE) 255 * pow(g / 255.0f, 3);
-		b = (BYTE) 255 * pow(b / 255.0f, 3);
+		r = (BYTE) (255 * pow(r / 255.0f, 3));
+		g = (BYTE) (255 * pow(g / 255.0f, 3));
+		b = (BYTE) (255 * pow(b / 255.0f, 3));
 	}
 
 	//apply color correction
@@ -181,7 +171,7 @@ DWORD applyCorrection(DWORD color, bool colorCorrection, bool gradation)
 		BYTE m = min(r, min(g, b));
 		float x = g / 255.0f;
 
-		g = min(255, g + 255.0f * 0.2f * pow(x, 0.8f));
+		g = (BYTE) min(255, g + 255.0f * 0.2f * pow(x, 0.8f));
 
 		if(g > 220)
 		{
@@ -193,9 +183,7 @@ DWORD applyCorrection(DWORD color, bool colorCorrection, bool gradation)
 	return 0xFF000000 | MAKERGB(r, g, b);
 }
 
-//int size = 0;
-
-BOOL	CColorCorrectionDfx::Render(CScreen **ppInput, CScreen *pOutput)
+BOOL CColorCorrectionDfx::Render(CScreen **ppInput, CScreen *pOutput)
 {
 	CScreen *in = *ppInput;
 
@@ -205,9 +193,6 @@ BOOL	CColorCorrectionDfx::Render(CScreen **ppInput, CScreen *pOutput)
 
 	DWORD *src = (DWORD*) in->GetBuffer();
 	DWORD* pDest = (DWORD*) pOutput->GetBuffer();
-
-	// clear output buffer (black-screen)
-	//memset(pDest, 0, m_nXRes * m_nYRes * 4);
 
 	for(int x = 0; x < m_nXRes; x++)
 	{
@@ -226,18 +211,6 @@ BOOL	CColorCorrectionDfx::Render(CScreen **ppInput, CScreen *pOutput)
 
 SIZE CColorCorrectionDfx::GetInputScreenRes(int i, SIZE szOutput)
 {
-	//old code:
-	//if (szOutput.cx == -1 && szOutput.cy == -1){
-	//	return CDFX::GetInputScreenRes(i, szOutput); // you MUST keep this! if szOutput equals [-1,-1], then the output-resolution is still undefined!
-	//}
-
-	//SIZE s;
-	//if (i == 0){ // this is a common code for input-screen 0
-	//	s.cx = m_nX0;
-	//	s.cy = m_nY0;
-	//	return s;
-	//}
-
 	return CDFX::GetInputScreenRes(i, szOutput);
 }
 

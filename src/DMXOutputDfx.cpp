@@ -18,7 +18,8 @@
 
 #include "pkgSAMPLES.h"
 #include "DMXOutputDfxDlg.h"
-#include "common.h"
+#include "utils/rgb.h"
+#include "utils/time.h"
 
 #include "DMXOutput.h"
 
@@ -71,7 +72,6 @@ protected:
 };
 
 //forward declarations
-long long milliseconds_now();
 int getLEDMatrixChannel(int x, int y, int addressMode, int matrixColumns, int matrixRows, int dmxOffset);
 
 //Visual jockey registration
@@ -221,9 +221,9 @@ void CDMXOutputDfx::runDMXTest()
 {
 	testCounter = milliseconds_now() - testStartTime;
 
-	int sec = testCounter / MS_PER_SEC;
-	int secPart = testCounter / MS_PER_SEC_PART;
-	int fastCounter = testCounter / MS_PER_SEC_FAST;
+	__int64 sec = testCounter / MS_PER_SEC;
+	__int64 secPart = testCounter / MS_PER_SEC_PART;
+	__int64 fastCounter = testCounter / MS_PER_SEC_FAST;
 
 	int startIndex = 2;
 
@@ -231,7 +231,7 @@ void CDMXOutputDfx::runDMXTest()
 	{
 		DMXOutput::getInstance().clearDMXChannels();
 
-		DMXOutput::getInstance().setDmxValue(secPart, 0xFF);
+		DMXOutput::getInstance().setDmxValue((int) secPart, 0xFF);
 
 		if(secPart >= MAX_DMX_CHANNELS)
 			nextTest();
@@ -246,7 +246,7 @@ void CDMXOutputDfx::runDMXTest()
 	}
 	else if(testIndex == ++startIndex)
 	{
-		DMXOutput::getInstance().clearDMXChannels(fastCounter);
+		DMXOutput::getInstance().clearDMXChannels((BYTE) fastCounter);
 
 		if(fastCounter > 0xFF)
 			nextTest();
@@ -291,7 +291,7 @@ void CDMXOutputDfx::runDMXTest()
 	{
 		for(int c = m_settings.DMXChannel; c < m_settings.DMXChannel + m_settings.numPixels() * 3; c+=3)
 		{
-			DWORD color = MAKERGB(fastCounter, fastCounter, fastCounter);
+			DWORD color = MAKERGB((BYTE) fastCounter, (BYTE) fastCounter, (BYTE) fastCounter);
 			setDmxColorValue(c, color);
 		}
 	}
@@ -397,8 +397,8 @@ BOOL CDMXOutputDfx::Render(CScreen **ppInput, CScreen *pOutput)
 		int numTilesX = video_width / tileSize;
 		int numTilesY = video_height / tileSize;
 
-		int leftOffset = 0.5 * (video_width - tileSize * numTilesX);
-		int bottomOffset = 0.5 * (video_height - tileSize * numTilesY);
+		int leftOffset = (int) (0.5 * (video_width - tileSize * numTilesX));
+		int bottomOffset = (int) (0.5 * (video_height - tileSize * numTilesY));
 
 		for(int x = 0; x < matrixColumns; x++)
 		{

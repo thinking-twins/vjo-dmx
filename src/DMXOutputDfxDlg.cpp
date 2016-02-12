@@ -136,7 +136,7 @@ void CDMXOutputDfxDlg::OnPaint()
 	{
 		dc.SetTextColor(textcolor);
 		dc.SetTextAlign(TA_CENTER);
-		dc.TextOut(rect.CenterPoint().x, rect.CenterPoint().y, "No DMX Device selected");
+		dc.TextOut(rect.CenterPoint().x, rect.CenterPoint().y, _T("No DMX Device selected"));
 		GetDlgItem(IDC_COMBO_ADDRESSMODE)->ShowWindow(SW_HIDE);
 	}
 	else
@@ -145,7 +145,7 @@ void CDMXOutputDfxDlg::OnPaint()
 		dc.SetTextColor(textcolor);
 		
 		CFont newFont;
-		newFont.CreatePointFont(58, "Arial", &dc);
+		newFont.CreatePointFont(60, _T("Arial"), &dc);
 		
 		CFont* pOldFont = dc.SelectObject(&newFont);
 
@@ -155,7 +155,7 @@ void CDMXOutputDfxDlg::OnPaint()
 		{
 			static char val[10];
 			sprintf_s(val, sizeof(val), "%02i", matrixSettings.DMXChannel + i * columns);
-			dc.TextOut(rect.left - 2, rect.top + i * gridHeight + gridHeight / 3, val);
+			dc.TextOut(rect.left - 2, rect.top + i * gridHeight + gridHeight / 3, LPCTSTR(val));
 		}
 
 		dc.SetTextAlign(TA_CENTER);
@@ -195,7 +195,7 @@ void CDMXOutputDfxDlg::OnPaint()
 				sprintf_s(val, sizeof(val), "%02X", bufferValue);
 
 				dc.SetTextColor(textcolor);
-				dc.TextOut(x + gridWidth / 2, y + gridHeight / 3, val);
+				dc.TextOut(x + gridWidth / 2, y + gridHeight / 3, LPCTSTR(val));
 			}
 		}
 

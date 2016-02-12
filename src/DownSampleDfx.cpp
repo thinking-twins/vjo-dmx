@@ -237,8 +237,8 @@ BOOL CDownSampleDfx::Render(CScreen **ppInput, CScreen *pOutput)
 	int numTilesX = outSize.cx / tileSize;
 	int numTilesY = outSize.cy / tileSize;
 
-	int leftOffset = 0.5 * (outSize.cx - tileSize * numTilesX);
-	int bottomOffset = 0.5 * (outSize.cy - tileSize * numTilesY);
+	int leftOffset = (int) (0.5 * (outSize.cx - tileSize * numTilesX));
+	int bottomOffset = (int) (0.5 * (outSize.cy - tileSize * numTilesY));
 
 	// clear output buffer (black-screen)
 	memset(pDest, 0, m_nXRes * m_nYRes * 4);
@@ -262,7 +262,7 @@ BOOL CDownSampleDfx::Render(CScreen **ppInput, CScreen *pOutput)
 		{
 			//sample some pixels
 			for(int s = 0; s < 1; s++)
-				color = GetPixel(src, x * tileSize + tileSize * samples[s].x, y * tileSize + tileSize * samples[s].y);
+				color = GetPixel(src, (int) (x * tileSize + tileSize * samples[s].x), (int) (y * tileSize + tileSize * samples[s].y));
 
 			FillRect(pDest, color, leftOffset + x * tileSize, bottomOffset + y * tileSize, drawSize, drawSize);
 		}

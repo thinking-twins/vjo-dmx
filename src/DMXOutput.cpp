@@ -41,9 +41,9 @@ UINT WriterThread(LPVOID lp)
 }
 
 LPCTSTR initMessage = _T("Initializing device...");
-LPCSTR connectMessage = _T("Please connect USB->DMX device...");
-LPCSTR errorMessage = _T("Error initializing device");
-CString deviceMessage = ("Using device 0");
+LPCTSTR connectMessage = _T("Please connect USB->DMX device...");
+LPCTSTR errorMessage = _T("Error initializing device");
+CString deviceMessage = _T("Using device 0");
 char deviceName[64];
 
 void DMXOutput::initDMX()

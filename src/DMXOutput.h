@@ -28,7 +28,7 @@ public:
 
 public:
 
-	LPCSTR Status;
+	LPCTSTR Status;
 
 protected:
 
