@@ -18,12 +18,12 @@ ___
 
 ## Installation ##
 
-* Download the **plugin files** here:
-* Extract the archive into the Visual Jockey **root** folder (usually C:\Program Files (x86)\VisualJockey Gold SP1\)
+* Download the **plugin files** here: [dmx-tools.zip](https://download.thinking-twins.net/public/dmx-tools.zip) (contains plugin-fxp, examples and some resources)
+* Extract/Merge the archive into the Visual Jockey **root** folder (usually C:\Program Files (x86)\VisualJockey Gold SP1\)
 * Connect your DMX Converter (DMX to WS2811 converter)
 * Open Visual Jockey Gold SP1
 * In the Composition gallery, there's a new Folder called "DMX Examples"
-* Load **DMX_test01.fxc**
+* Load **DMX Example 01.fxc**
 * Run the composition!
 
 ___
@@ -42,3 +42,7 @@ ___
 
 
 ![06b_dmx_plugin.png](https://bitbucket.org/repo/x6G97j/images/1242016383-06b_dmx_plugin.png)
+
+## Supported Platforms ##
+
+ * Windows XP/Vista/7/8/10
