@@ -2,7 +2,7 @@
 
 This is a collection of [VJo](http://www.visualjockey.com/) custom effects to easily stream your output screen to external DMX devices (e.g. LED Pixel Walls, LED Strings, DMX Fixtures). 
 
-![03_prototyp_dmxplugin.JPG](https://bitbucket.org/repo/x6G97j/images/1282263225-03_prototyp_dmxplugin.JPG)
+![03_prototyp_dmxplugin.JPG](http://download.thinking-twins.net/public/img/github/03_prototyp_dmxplugin.JPG)
 
 
 ## Available plugins ##
@@ -12,7 +12,7 @@ This is a collection of [VJo](http://www.visualjockey.com/) custom effects to ea
 * **Mosaic Effect** (to simulate/preview the rasterized output)
 * **Time Blur** (smoothly fade out colors over time)
 
-![vjo_plugins.png](https://bitbucket.org/repo/x6G97j/images/4099938706-vjo_plugins.png)
+![vjo_plugins.png](http://download.thinking-twins.net/public/img/github/vjo_plugins.png)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 * Run the test mode (Auto, Step, Snake, Increase Value, Flip, Linear Brightness, Matrix Brightness )
 
 
-![06b_dmx_plugin.png](https://bitbucket.org/repo/x6G97j/images/1242016383-06b_dmx_plugin.png)
+![06b_dmx_plugin.png](http://download.thinking-twins.net/public/img/github/06b_dmx_plugin.png)
 
 ## Hardware Setup ##
 
