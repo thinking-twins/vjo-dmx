@@ -154,8 +154,6 @@ DMXOutput::~DMXOutput()
 	{
 		clearDMXChannels(0);
 
-		setDmxValue(6, 200);
-
 		writeBufferToDMX();
 
 		FT_Close(handle);

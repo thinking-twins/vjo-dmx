@@ -10,7 +10,7 @@
 
 const short DEFAULT_COLUMNS = 6;
 const short DEFAULT_ROWS = 6;
-const int		DMX_START_CHANNEL = 4;
+const int		DMX_START_CHANNEL = 0;
 
 struct MatrixSettings
 {
