@@ -18,7 +18,7 @@ ___
 
 ## Installation ##
 
-* Download the **plugin files** here: [dmx-tools.zip](https://download.thinking-twins.net/public/dmx-tools.zip) (contains plugin-fxp, examples and some resources)
+* Download the **plugin files** here: [dmx-tools.zip](http://download.thinking-twins.net/public/dmx-tools.zip) (contains plugin-fxp, examples and some resources)
 * Extract/Merge the archive into the Visual Jockey **root** folder (usually C:\Program Files (x86)\VisualJockey Gold SP1\)
 * Connect your DMX Converter (DMX to WS2811 converter)
 * Open Visual Jockey Gold SP1
