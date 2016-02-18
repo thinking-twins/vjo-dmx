@@ -1,6 +1,5 @@
-Debug
-Release
-SDK/vJo32/Effects
+src/Debug
+src/Release
 *.suo
 *.ncb
 *.user
