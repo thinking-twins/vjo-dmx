@@ -83,7 +83,7 @@ BEGIN_OUTPUTSCREENS_DESC(CDMXOutputDfx)
 {-1,-1},  ""
 END_OUTPUTSCREENS_DESC(CDMXOutputDfx)
 
-BEGIN_EFFECT_DESC(CDMXOutputDfx, VJO_PRIVATE_UID_FIRST - 0xFB234D252, (350<<16) , "Thinking-Twins\\DMX Output", "Thinking-Twins GbR", "Map screen colors to dmx output")
+BEGIN_EFFECT_DESC(CDMXOutputDfx, VJO_PRIVATE_UID_FIRST - 0xFB234D252, (350<<16) , "DMX Tools\\DMX Output", "Thinking-Twins GbR", "Map screen colors to dmx output")
 END_EFFECT_DESC(CDMXOutputDfx) 
 
 REGISTER_DFXFACTORY(CDMXOutputDfx)

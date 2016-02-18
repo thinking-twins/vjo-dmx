@@ -67,7 +67,7 @@ BEGIN_OUTPUTSCREENS_DESC(CDownSampleDfx)
 {-1, -1}, ""
 END_OUTPUTSCREENS_DESC(CDownSampleDfx)
 
-BEGIN_EFFECT_DESC(CDownSampleDfx, VJO_PRIVATE_UID_FIRST - 0xFB234D251, (350<<16), "Thinking-Twins\\DownSample", "Thinking-Twins GbR", "Scale down to a low resolution")
+BEGIN_EFFECT_DESC(CDownSampleDfx, VJO_PRIVATE_UID_FIRST - 0xFB234D251, (350<<16), "DMX Tools\\DownSample", "Thinking-Twins GbR", "Scale down to a low resolution")
 END_EFFECT_DESC(CDownSampleDfx) 
 
 REGISTER_DFXFACTORY(CDownSampleDfx)

@@ -57,7 +57,7 @@ BEGIN_OUTPUTSCREENS_DESC(CColorCorrectionDfx)
 {-1, -1}, ""
 END_OUTPUTSCREENS_DESC(CColorCorrectionDfx)
 
-BEGIN_EFFECT_DESC(CColorCorrectionDfx, VJO_PRIVATE_UID_FIRST - 0xFB23, (350<<16), "Thinking-Twins\\ColorCorrection", "Thinking-Twins GbR", "Apply color correction and gradation")
+BEGIN_EFFECT_DESC(CColorCorrectionDfx, VJO_PRIVATE_UID_FIRST - 0xFB23, (350<<16), "DMX Tools\\ColorCorrection", "Thinking-Twins GbR", "Apply color correction and gradation")
 END_EFFECT_DESC(CColorCorrectionDfx) 
 
 REGISTER_DFXFACTORY(CColorCorrectionDfx)

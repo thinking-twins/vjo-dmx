@@ -69,7 +69,7 @@ BEGIN_OUTPUTSCREENS_DESC(CTimeBlurDfx)
 {-1, -1}, ""
 END_OUTPUTSCREENS_DESC(CTimeBlurDfx)
 
-BEGIN_EFFECT_DESC(CTimeBlurDfx, VJO_PRIVATE_UID_FIRST - 0xFB13, (350<<16), "Thinking-Twins\\TimeEcho", "Thinking-Twins GbR", "Smooth color fadings between frames")
+BEGIN_EFFECT_DESC(CTimeBlurDfx, VJO_PRIVATE_UID_FIRST - 0xFB13, (350<<16), "DMX Tools\\TimeEcho", "Thinking-Twins GbR", "Smooth color fadings between frames")
 END_EFFECT_DESC(CTimeBlurDfx) 
 
 REGISTER_DFXFACTORY(CTimeBlurDfx)
