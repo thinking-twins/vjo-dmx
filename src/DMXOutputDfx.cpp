@@ -206,7 +206,8 @@ int getLEDStripChannel(int offset, int dmxOffset)
 	return dmxOffset + offset * 3;
 }
 
-#define MAX_DMX_CHANNELS 65
+//apply the sequential effects just for up to x channels
+#define MAX_DMX_CHANNELS 50
 
 #define MS_PER_SEC 1000
 #define MS_PER_SEC_PART 250
