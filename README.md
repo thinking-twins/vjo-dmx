@@ -43,6 +43,24 @@ ___
 
 ![06b_dmx_plugin.png](https://bitbucket.org/repo/x6G97j/images/1242016383-06b_dmx_plugin.png)
 
+## Hardware Setup ##
+
+* USB -> DMX converter compatible with the Open DMX protocol
+* DMX -> WS2801 converter (search for **DMX-512-SPI-decoder-to-WS-2801** on ebay)
+* WS2801 compatible LED Pixels, Stripes, Boards
+
+## Technical Details ##
+
+* Your USB->DMX device needs to be compatible to the Open DMX protocol (often referred to as ENTEC Open Interface)
+* the required FTDI driver (ftd2xx.dll) is distributed within the package
+* Make sure the base-channel in your DMX->WS2801 converter is set to **0**
+
 ## Supported Platforms ##
 
  * Windows XP/Vista/7/8/10
+ 
+## Build from Source ##
+ 
+In order to extend the functionality or debug some issues you can build the \*.fxp-file using Visual Studio 2012 or newer. Just open the Solution-File :)
+
+*Tip: For Live-debugging, set the working directory to C:\Program Files (x86)\VisualJockey Gold SP1\bin and make sure your output is copied to the plugin folder.*
