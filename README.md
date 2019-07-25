@@ -2,7 +2,7 @@
 
 This is a collection of [VJo](http://www.visualjockey.com/) custom effects to easily stream your output screen to external DMX devices (e.g. LED Pixel Walls, LED Strings, DMX Fixtures). 
 
-![03_prototyp_dmxplugin.JPG](http://download.thinking-twins.net/public/img/github/03_prototyp_dmxplugin.JPG)
+![03_prototyp_dmxplugin.JPG](https://s3-eu-west-1.amazonaws.com/download.thinking-twins.net/public/img/github/03_prototyp_dmxplugin.JPG)
 
 
 ## Available plugins ##
@@ -12,13 +12,13 @@ This is a collection of [VJo](http://www.visualjockey.com/) custom effects to ea
 * **Mosaic Effect** (to simulate/preview the rasterized output)
 * **Time Blur** (smoothly fade out colors over time)
 
-![vjo_plugins.png](http://download.thinking-twins.net/public/img/github/vjo_plugins.png)
+![vjo_plugins.png](https://s3-eu-west-1.amazonaws.com/download.thinking-twins.net/public/img/github/vjo_plugins.png)
 
 ___
 
 ## Installation ##
 
-* Download the **plugin files** here: [dmx-tools.zip](http://download.thinking-twins.net/public/dmx-tools.zip) (contains plugin-fxp, examples and some resources)
+* Download the **plugin files** here: [dmx-tools.zip](https://s3-eu-west-1.amazonaws.com/download.thinking-twins.net/public/dmx-tools.zip) (contains plugin-fxp, examples and some resources)
 * Extract/Merge the archive into the Visual Jockey **root** folder (usually C:\Program Files (x86)\VisualJockey Gold SP1\)
 * Connect your DMX Converter (DMX to WS2811 converter)
 * Open Visual Jockey Gold SP1
@@ -41,7 +41,7 @@ ___
 * Run the test mode (Auto, Step, Snake, Increase Value, Flip, Linear Brightness, Matrix Brightness )
 
 
-![06b_dmx_plugin.png](http://download.thinking-twins.net/public/img/github/06b_dmx_plugin.png)
+![06b_dmx_plugin.png](https://s3-eu-west-1.amazonaws.com/download.thinking-twins.net/public/img/github/06b_dmx_plugin.png)
 
 ## Hardware Setup ##
 
